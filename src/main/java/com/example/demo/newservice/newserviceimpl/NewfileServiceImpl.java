@@ -18,11 +18,13 @@ public class NewfileServiceImpl implements NewfileService {
     }
     @Override
     public NewfileEntity savedata(NewfileEntity newfile) {
+        return rep.save(newfile);
         
     }
 
     @Override
     public NewfileEntity getidval(Long id) {
+        return rep.
         
     }
 
