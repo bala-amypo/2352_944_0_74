@@ -44,7 +44,8 @@ public class NewfileServiceImpl implements NewfileService {
     }
     @Override
 public void delete(Long id) {
-    delete(Long id);
+    
+    rep.delete(Long id);
     
 }
 
