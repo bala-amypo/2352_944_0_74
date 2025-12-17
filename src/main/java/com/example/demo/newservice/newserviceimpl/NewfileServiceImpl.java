@@ -30,15 +30,21 @@ public class NewfileServiceImpl implements NewfileService {
 
     @Override
     public List<NewfileEntity> getall() {
+        return rep.findAll();
        
     }
 
     @Override
     public NewfileEntity update(Long id, NewfileEntity newfile) {
+        NewfileEntity existing =getidval(id);
+        existing.setName(newfile.getName());
+        existing.setEmail(newfile.getEmail());
+        return rep.save(existing);
        
     }
     @Override
 public void delete(Long id) {
+    delete(Long id);
     
 }
 
