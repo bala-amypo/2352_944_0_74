@@ -14,3 +14,4 @@ public interface StudentService {
 
     String deletedata(int id);
 }
+
